@@ -1,0 +1,200 @@
+ ///////////////////////////////////////////////////////
+//13_May_2024
+//
+//VERSION 0.00.101
+// Panel Configuration file
+// PMDG 777 for MSFS
+///////////////////////////////////////////////////////
+
+
+
+
+
+//////////////////////////////////////////////////////
+//   VC SECTION 01
+//   Main Panel Display Units, CA and FO (CA ND in Section 10)
+///////////////////////////////////////////////////////
+
+[VCockpit01]
+size_mm=2048,2048
+pixel_size=2048,2048
+texture=DUS
+background_color=0,0,0
+htmlgauge00=WasmInstrument/WasmInstrument.html?wasm_module=pmdg_777_msfs.wasm&wasm_gauge=DU_LeftOutboard,    30,   33, 958, 971, 2 LEFT_OUTBD #21 VC
+htmlgauge01=WasmInstrument/WasmInstrument.html?wasm_module=pmdg_777_msfs.wasm&wasm_gauge=DU_LeftInboard,   1058,   33, 958, 971, 2 LEFT_INBD #22 VC
+htmlgauge02=WasmInstrument/WasmInstrument.html?wasm_module=pmdg_777_msfs.wasm&wasm_gauge=DU_RightInboard,    30, 1058, 958, 971, 2 RIGHT_INBD #25 VC
+htmlgauge03=WasmInstrument/WasmInstrument.html?wasm_module=pmdg_777_msfs.wasm&wasm_gauge=DU_RightOutboard, 1058, 1058, 958, 971, 2 RIGHT_OUTBD #26 VC
+htmlgauge04=WasmInstrument/WasmInstrument.html?wasm_module=pmdg_777_msfs.wasm&wasm_gauge=Core, 2044,2044,4,4
+
+
+
+//////////////////////////////////////////////////////
+//   VC SECTION 02
+//   Upper and Lower Center EICAS. CDU Screens  (Upper EICAS in Section 9)
+///////////////////////////////////////////////////////
+
+[VCockpit02]
+size_mm=2048,2048
+pixel_size=2048,2048
+texture=EICASCDU
+background_color=0,0,0
+htmlgauge00=WasmInstrument/WasmInstrument.html?wasm_module=pmdg_777_msfs.wasm&wasm_gauge=DU_Upper,     30,   33, 958, 971, 2 UPPER #23 VC
+htmlgauge01=WasmInstrument/WasmInstrument.html?wasm_module=pmdg_777_msfs.wasm&wasm_gauge=DU_Lower,   1058,   21, 958, 971, 2 LOWER #24 VC
+htmlgauge02=WasmInstrument/WasmInstrument.html?wasm_module=pmdg_777_msfs.wasm&wasm_gauge=CDUScreen,     0, 1441,  683,  609, L #3 VC
+htmlgauge03=WasmInstrument/WasmInstrument.html?wasm_module=pmdg_777_msfs.wasm&wasm_gauge=CDUScreen,   683, 1441,  683,  609, R #4 VC
+htmlgauge04=WasmInstrument/WasmInstrument.html?wasm_module=pmdg_777_msfs.wasm&wasm_gauge=CDUScreen,  1366, 1441,  683,  609, C #5 VC
+
+
+
+
+//////////////////////////////////////////////////////
+//   VC SECTION 03
+//   ISFD
+///////////////////////////////////////////////////////
+
+[VCockpit03]
+size_mm=512, 512
+pixel_size=512, 512
+texture=VCISFD
+background_color=0,0,0
+
+htmlgauge00=WasmInstrument/WasmInstrument.html?wasm_module=pmdg_777_msfs.wasm&wasm_gauge=ISFDScreen, 0, 0, 512, 512, #1 VC
+
+
+
+//////////////////////////////////////////////////////
+//   VC SECTION 04
+//   ISFD No click
+///////////////////////////////////////////////////////
+
+[VCockpit04]
+size_mm=512, 512
+pixel_size=512, 512
+texture=VCISFDNC
+background_color=0,0,0
+
+htmlgauge00=WasmInstrument/WasmInstrument.html?wasm_module=pmdg_777_msfs.wasm&wasm_gauge=ISFDScreen, 0, 0, 512, 512, #2 VC
+
+
+
+//////////////////////////////////////////////////////
+//   VC SECTION 05
+//   Standby Displays
+///////////////////////////////////////////////////////
+
+[VCockpit05] 
+size_mm=1024, 1024
+pixel_size=1024, 1024
+texture=VCSTBY
+background_color=0,0,0
+ 
+htmlgauge00=WasmInstrument/WasmInstrument.html?wasm_module=pmdg_777_msfs.wasm&wasm_gauge=StandbyAttScreen,      2,   0,  510, 464, #1 VC
+htmlgauge01=WasmInstrument/WasmInstrument.html?wasm_module=pmdg_777_msfs.wasm&wasm_gauge=StandbyASIScreen,    514,   0,  510, 476, #1 VC
+htmlgauge02=WasmInstrument/WasmInstrument.html?wasm_module=pmdg_777_msfs.wasm&wasm_gauge=StandbyAltScreen,      2, 470,  510, 476, #1 VC
+
+
+
+
+//////////////////////////////////////////////////////
+//   VC SECTION 06
+//   Standby Displays No Click
+///////////////////////////////////////////////////////
+
+[VCockpit06] 
+size_mm=1024, 1024
+pixel_size=1024, 1024
+texture=VCSTBYNC
+background_color=0,0,0
+ 
+htmlgauge00=WasmInstrument/WasmInstrument.html?wasm_module=pmdg_777_msfs.wasm&wasm_gauge=StandbyAttScreen,      2,   0,  510, 464, #2 VC
+htmlgauge01=WasmInstrument/WasmInstrument.html?wasm_module=pmdg_777_msfs.wasm&wasm_gauge=StandbyASIScreen,    514,   0,  510, 476, #2 VC
+htmlgauge02=WasmInstrument/WasmInstrument.html?wasm_module=pmdg_777_msfs.wasm&wasm_gauge=StandbyAltScreen,      2, 470,  510, 476, #2 VC
+
+
+//////////////////////////////////////////////////////
+//   VC SECTION 7
+//   CDU Screens, MCP, Radio & TCAS digits
+///////////////////////////////////////////////////////
+
+[VCockpit07]
+size_mm=1024, 1024
+pixel_size=1024, 1024
+texture=VCRadio
+background_color=0,0,0
+
+
+htmlgauge00=WasmInstrument/WasmInstrument.html?wasm_module=pmdg_777_msfs.wasm&wasm_gauge=MCPDisplays,   0,  57,  676,  52, VC SIDE
+htmlgauge01=WasmInstrument/WasmInstrument.html?wasm_module=pmdg_777_msfs.wasm&wasm_gauge=RadioDisplays, 0,   0, 1021,  51, VC
+htmlgauge02=WasmInstrument/WasmInstrument.html?wasm_module=pmdg_777_msfs.wasm&wasm_gauge=TCASDisplay,   0, 310,  511, 289, VC
+htmlgauge03=WasmInstrument/WasmInstrument.html?wasm_module=pmdg_777_msfs.wasm&wasm_gauge=StabTrimL,   517, 311,  244, 704, VC
+htmlgauge04=WasmInstrument/WasmInstrument.html?wasm_module=pmdg_777_msfs.wasm&wasm_gauge=StabTrimR,   769, 311,  244, 704, VC
+htmlgauge05=WasmInstrument/WasmInstrument.html?wasm_module=pmdg_777_msfs.wasm&wasm_gauge=RudderTrim,    0, 112,  754, 193, VC
+
+
+
+//////////////////////////////////////////////////////
+//   VC SECTION 8
+//   Chronometers
+///////////////////////////////////////////////////////
+
+[VCockpit08]
+size_mm=1024,512
+pixel_size=1024,512
+texture=VCChrono
+background_color=0,0,0
+
+htmlgauge00=WasmInstrument/WasmInstrument.html?wasm_module=pmdg_777_msfs.wasm&wasm_gauge=ChronoScreen,   0, 0, 512,  512, L #3 VC
+htmlgauge01=WasmInstrument/WasmInstrument.html?wasm_module=pmdg_777_msfs.wasm&wasm_gauge=ChronoScreen, 512, 0, 512,  512, R #4 VC
+
+
+
+//////////////////////////////////////////////////////
+// VC SECTION 9
+// Tablet Captain
+///////////////////////////////////////////////////////
+
+[VCockpit09]
+size_mm=2048,2048
+pixel_size=2048,2048
+texture=VCTABLETCA
+background_color=0,0,0
+
+htmlgauge00=PMDGTablet/pmdg-777-300ER/PMDGTabletCA.html, 0, 0, 2048, 1562, VC
+
+
+
+/////////////////////////////////////////////////////
+// VC SECTION 10
+// TABLET FIRST OFFICER
+///////////////////////////////////////////////////////
+
+[VCockpit10]
+size_mm=2048,2048
+pixel_size=2048,2048
+texture=VCTABLETFO
+background_color=0,0,0
+
+htmlgauge00=PMDGTablet/pmdg-777-300ER/PMDGTabletFO.html, 0, 0, 2048, 1562, VC
+
+
+//////////////////////////////////////////////////////
+//   VC SECTION 11
+//   Upper EICAS when Tablet in handheld position
+///////////////////////////////////////////////////////
+
+[VCockpit11]
+size_mm=2048,2048
+pixel_size=2048,2048
+texture=EICASUP
+background_color=0,0,0
+htmlgauge04=WasmInstrument/WasmInstrument.html?wasm_module=pmdg_777_msfs.wasm&wasm_gauge=DU_Upper,     53,   40, 917, 943, 2 UPPER #27 VC
+
+
+[VCockpit12]
+size_mm=0,0
+pixel_size=0,0
+texture=NO_TEXTURE
+htmlgauge00=WasmInstrument/WasmInstrument.html?wasm_module=msfs_navigation_data_interface.wasm&wasm_gauge=navigation_data_interface,0,0,1,1
+
+
+

@@ -1,0 +1,437 @@
+[VERSION]
+major = 1
+minor = 0 
+
+[WEIGHT_AND_BALANCE]
+reference_datum_position = 0.00, 0, 0.0
+empty_weight_cg_position = -8.44, 0, 3.29		// WAS 1.29
+
+// Weight && Balance Manual 3 Class
+max_number_of_stations = 50
+station_load.0 = 12,  74.62, 0.0, 5.9, "First Class", 3
+station_load.1 = 42,  42.54, 0.0, 5.9, "Business Class", 3 
+station_load.2 = 316, -32.22, 0.0, 5.9, "Economy Class", 3
+station_load.3 = 41206.0,  45.58, 0.0, -1.1, "For Cargo", 6 
+station_load.4 = 35095.0, -50.88, 0.0, -1.1, "Aft Cargo", 6
+station_load.5 = 8034.0, -84.00, 0.0, -1.0, "Bulk Cargo", 6
+station_load.6 = 0, -8.44, 0.0, 3.0, "eng_wei_dif"
+//
+station_load.7 = 190, 92.0, -1.630, 5.0, TT:MENU.PAYLOAD.PILOT, 1 
+station_load.8 = 190, 92.0, 1.630, 5.0, TT:MENU.PAYLOAD.COPILOT, 2
+station_load.9 = 0, 87.0, 0.000, 5.0, TT:MENU.PAYLOAD.INSTRUCTOR, 3 
+station_load.10 = 300, 85.6, 0.0, 5.0, "fwd_gly", 3
+station_load.11 = 400, -45.4, 0.0, 5.0, "mid_gly", 3 
+station_load.12 = 600, -89.4, 0.0, 5.0, "aft_gly", 3 
+//
+station_load.13 = 0, 60, 0.0, 2.0, "Point1", 6
+station_load.14 = 0, 50, 0.0, 2.0, "Point2", 6 
+station_load.15 = 0, 40, 0.0, 2.0, "Point3", 6 
+station_load.17 = 0, 30, 0.0, 2.0, "Point4", 6 
+station_load.18 = 0, 25, 0.0, 2.0, "Point5", 6 
+station_load.19 = 0, 20, 0.0, 2.0, "Point6", 6 
+station_load.20 = 0, 15, 0.0, 2.0, "Point7", 6 
+station_load.21 = 0, 10, 0.0, 2.0, "Point8", 6 
+station_load.22 = 0,  5, 0.0, 2.0, "Point9", 6 
+station_load.23 = 0,  0, 0.0, 2.0, "Point10", 6 
+station_load.24 = 0, -5, 0.0, 2.0, "Point11", 6 
+station_load.25 = 0, -10, 0.0, 2.0, "Point12", 6 
+station_load.26 = 0, -15, 0.0, 2.0, "Point13", 6 
+station_load.27 = 0, -20, 0.0, 2.0, "Point14", 6 
+station_load.28 = 0, -25, 0.0, 2.0, "Point15", 6 
+station_load.29 = 0, -30, 0.0, 2.0, "Point16", 6 
+station_load.30 = 0, -35, 0.0, 2.0, "Point17", 6 
+station_load.31 = 0, -40, 0.0, 2.0, "Point18", 6 
+station_load.32 = 0, -45, 0.0, 2.0, "Point19", 6 
+station_load.33 = 0, -50, 0.0, 2.0, "Point20", 6 
+station_load.34 = 0, -60, 0.0, 2.0, "Point21", 6 
+station_load.35 = 0, -70, 0.0, 2.0, "Point22", 6
+//
+empty_weight = 370000.0							//				Basic operating weight (line)
+min_oper_weight = 370000.0						//						""
+max_gross_weight = 777000.0						//				Max taxi weight
+max_zerofuel_weight = 524000.0
+max_landing_weight = 554000.0
+//
+empty_weight_pitch_moi = 15423466,7		// WAS 17814104.5 16194640.4
+empty_weight_roll_moi = 8360376.2 		// WAS 9196413.8
+empty_weight_yaw_moi = 12939955.4		// WAS 15527946.489
+empty_weight_coupled_moi = 0.00
+//
+CG_forward_limit=0
+CG_aft_limit=1
+activate_cg_limit_based_on_mach=0
+activate_mach_draglimit_based_on_cg=0
+
+[FUEL]
+center1 = -2.287,  0.000, 0.300, 27290.000, 6.410
+center2 = -29.52,  0.000, 0.350,  5625.000, 0.000
+leftmain = -11.495, -49.00, 5.450, 10300.000, 2.000
+rightmain = -11.495,  49.00, 5.450, 10300.000, 2.000
+fuel_type = 2 ; 1 = OCTANE 100, 2 = JET_A, 3 = OCTANE 80, 4 = AUTO GAS, 5 = JET B
+number_of_tank_selectors = 1 ; Max 4
+electric_pump = 1
+fuel_dump_rate = 0.0
+engine_driven_pump = 1
+manual_transfer_pump = 0
+manual_pump = 0
+anemometer_pump = 0
+default_fuel_tank_selector.1=1
+default_fuel_tank_selector.2=1
+default_fuel_tank_selector.3=1
+default_fuel_tank_selector.4=1
+
+[AIRPLANE_GEOMETRY]
+wing_area = 4604.8
+wing_span = 205.7
+wing_root_chord = 39.2083	// 278.5in MAC
+wing_dihedral = 6.00		// WAS 6.25
+wing_incidence = 0.0
+wing_twist = 0.0
+oswald_efficiency_factor = 0.67		// WAS 0.703 
+wing_winglets_flag = 0
+wing_sweep = 35.5					// WAS 31.66
+wing_pos_apex_lon = 17.00			// WAS 19.82
+wing_pos_apex_vert = -2.0			// WAS 0.15
+wing_camber = 1
+wing_thickness_ratio = 0.05
+//
+htail_area = 801.572
+htail_span = 70.630
+htail_incidence = -1.00		// WAS -2.0, -1.0 this works opposite to sense
+htail_sweep = 39.5
+htail_pos_lon = -115.2		// WAS -92.221
+htail_pos_vert = 12.9		// WAS 7.841
+htail_thickness_ratio = 0.05
+//
+vtail_area = 449.285
+vtail_span = 32.25
+vtail_sweep = 45.0
+vtail_pos_lon = -100.5		// WAS -87.57
+vtail_pos_vert = 21.0		// WAS 13.842
+vtail_thickness_ratio = 0.05
+//
+fuselage_length = 242.3
+fuselage_diameter = 20.4
+fuselage_center_pos = 3.5, 0, 6
+//
+elevator_area = 194.554
+aileron_area = 50.852
+rudder_area = 237.615
+elevator_up_limit = 30.0
+elevator_down_limit = 25.0
+aileron_up_limit = 30.0			// OUT 30/10 INB 11/27
+aileron_down_limit = 10.0		// Code controlled
+rudder_limit = 27.3
+elevator_trim_limit = 11.0		// 4/11 Code controlled
+rudder_trim_limit = 27.0		// Code locked
+//
+spoiler_limit = 60.0
+air_spoiler_limit = 45		// Code limited
+spoiler_extension_time = 2.0
+auto_spoiler_available = 1
+spoiler_disabled_by_flaps=0
+auto_spoiler_auto_retracts=1
+//
+spoilerons_available = 0
+aileron_to_spoileron_gain = 3 ; Aileron to spoileron gain
+min_ailerons_for_spoilerons = 10 ; Degrees
+min_flaps_for_spoilerons = 0 ; Minimum flap handle position when spoilerons activate
+//
+positive_g_limit_flaps_up = 2.5 ; Flap positive load limit when up. Same dimension as gravity vector FEET/SECONDS^2
+positive_g_limit_flaps_down = 2.0 ; Flap positive load limit when down. Same dimension as gravity vector FEET/SECONDS^2
+negative_g_limit_flaps_up = -1.0 ; Flap negative load limit when up. Same dimension as gravity vector FEET/SECONDS^2
+negative_g_limit_flaps_down = -0.1 ; Flap negative load limit when down. Same dimension as gravity vector FEET/SECONDS^2
+load_safety_factor = 1.5 ; Flap negative load limit when down. Same dimension as gravity vector FEET/SECONDS^2
+//
+spoiler_handle_available = 1 ; Spoiler handles available true/false
+auto_spoiler_min_speed = 0 ; Auto spoilers minimum trigger speed
+elevator_trim_neutral = 0 ; Elevator trim max angle (absolute value) (DEGREES), for indicators only (no influence on flight model)
+aileron_to_rudder_scale = 0 ; non-dimensional
+flap_to_aileron_scale = 0 ; non-dimensional
+fly_by_wire = 0
+//
+elevator_elasticity_table = 0.00:1.00, 80.0:0.97, 120.0:0.95, 250.0:0.80, 400.0:0.63
+aileron_elasticity_table = 0.000:1.09, 80.0:1.04, 120.0:1.03, 250.0:0.70, 400.0:0.50
+rudder_elasticity_table = 0.0000:1.05, 80.0:1.05, 150.0:1.02, 250.0:0.95, 1500.000000:0.000000
+elevator_trim_elasticity_table = 0.000000:1.000000,100.000000:1.100000,250.000000:1.000000,800.000000:0.500000,1500.000000:0.200000 ; 
+
+[INTERACTIVE POINTS]
+number_of_interactive_points=18
+//                     0    1        2         3      4  5  6   7   8   9  10 11  12  13 
+interactive_point.0=0.18,   85.091,  -9.210,   2.919, 2, 0, 0, -85, 85, 3,  0, 2, -2, 33 // DOOR 1L
+interactive_point.1=0.18,   85.091,   9.210,   2.919, 2, 0, 0,   0,  0, 3,  0, 2,  2, 33 // DOOR 1R 
+interactive_point.2=0.18,   52.993, -10.028,   2.919, 0, 0, 0, -90, 47,-2, 47,-2,  0,  0 // DOOR 2L MAIN
+interactive_point.3=0.18,   51.151,  10.028,   2.919, 2, 0, 0, -90,  0, 0,  0, 0,  0,  0 // DOOR 2R 
+interactive_point.4=0.18,    0.892, -10.028,   2.919, 2, 0, 0,   0,  0, 0,  0, 0,  0,  0 // DOOR 3L
+interactive_point.5=0.18,    0.892,  10.028,   2.919, 2, 0, 0,   0,  0, 0,  0, 0,  0,  0 // DOOR 3R
+interactive_point.6=0.18,  -45.239, -10.028,   2.919, 2, 0, 0,   0,  0, 0,  0, 0,  0,  0 // DOOR 4L
+interactive_point.7=0.18,  -45.239,  10.028,   2.919, 2, 0, 0,   0,  0, 0,  0, 0,  0,  0 // DOOR 4R
+interactive_point.8=0.18,  -88.494,  -8.976,   2.919, 2, 0, 0,   0,  0, 0,  0, 0,  0, 15 // DOOR 5L
+interactive_point.9=0.18,  -88.494,   8.976,   2.919, 2, 0, 0,   0,  0, 0,  0, 0,  0, 15 // DOOR 5R
+interactive_point.10=0.18,  68.622,   5.246,  -4.064, 1, 0, 0,   0,  0, 0,  0, 0,  0,  0 // FWD CARGO DOOR
+interactive_point.11=0.18, -62.611,   5.246,  -4.064, 1, 0, 0,   0,  0, 0,  0, 0,  0,  0 // AFT CARGO DOOR
+interactive_point.12=0.18, -77.893,   5.721,  -4.064, 1, 0, 0,   0,  0, 0,  0, 0,  0,  0 // BULK CARGO DOOR
+interactive_point.13=0.18,  85.800,  85.738,  -3.887, 1, 0, 0,   0,  0, 0,  0, 0,  0,  0 // GPU HOSE
+interactive_point.14=0.18,   2.923,  39.950,   3.904, 3, 0, 0,   0,  0, 0,  0, 0,  0,  0 // RIGHT WING FUEL HOSE
+interactive_point.15=0.18,   2.923, -39.950,   3.904, 3, 0, 0,   0,  0, 0,  0, 0,  0,  0 // LEFT WING FUEL HOSE
+interactive_point.16=0.35 , -99.799, -3.674,   7.650, 2, 0, 0,   0,  0, 0,  0, 0,  0,  0 // CA WINDOW
+interactive_point.17=0.35 , -99.799,  3.674,   7.650, 2, 0, 0,   0,  0, 0,  0, 0,  0,  0 // FO WINDOW
+
+[CONTACT_POINTS]
+point.0 = 1, 87.7,   0, -13.85,  1500, 0, 1.791, 66, 0.853, 2.3,  0.45, 13.5, 13.5, 0, 485, 0, 2
+point.1 = 1,-14.7, -18.0, -15.1, 1500, 1, 2.166,  0, 1.357, 1.7, 0.447, 15.5, 15.5, 2, 485, 0, 2
+point.2 = 1,-14.7,  18.0, -15.1, 1500, 2, 2.166,  0, 1.357, 1.7, 0.447, 15.5, 15.5, 3, 485, 0, 2
+//
+point.3= 2, 95.3,    0,  -3.5, 500, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 1
+point.4= 2,-39.0,-98.3,   8.9, 500, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 1
+point.5= 2,-39.0, 98.3,   8.9, 500, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 1
+point.6= 2,-101.1,   0, -0.04, 500, 0, 0, 0, 0, 0, 0, 0, 0, 9, 0, 0, 1
+point.7= 2,-124.4,   0,  46.1, 500, 0, 0, 0, 0, 0, 0, 0, 0, 9, 0, 0, 1
+point.8= 2, 17.8, 30.8, -10.6, 500, 0, 0, 0, 0, 0, 0, 0, 0, 9, 0, 0, 1
+point.9= 2, 17.8,-30.8, -10.6, 500, 0, 0, 0, 0, 0, 0, 0, 0, 9, 0, 0, 1 
+//
+static_pitch =-0.45
+static_cg_height =13.549
+gear_system_type = 5
+tailwheel_lock =0
+max_number_of_points =10
+gear_locked_on_ground =0
+gear_locked_above_speed =-1
+max_speed_full_steering = 50.6
+max_speed_decreasing_steering =135
+min_available_steering_angle_pct =0.109
+;max_speed_full_steering_castering =20
+;max_speed_decreasing_steering_castering =40
+;min_castering_angle =0.05236
+;max_castering_angle =3.14159
+emergency_extension_type =1
+;steering_time_constants = 3, 5
+hyd_need_power_to_function =0
+spring_exponential_fix =1
+
+[EXITS]
+number_of_exits = 18
+exit.0 = 0.4,   85.091,  -9.210,   2.919, 2   //DOOR 1L
+exit.1 = 0.4,   85.091,   9.210,   2.919, 2   //DOOR 1R
+exit.2 = 0.4,   52.023,  10.328,   2.919, 0   //DOOR 2L
+exit.3 = 0.4,   51.151, -10.328,   2.919, 2   //DOOR 2R
+exit.4 = 0.4,    0.892, -10.328,   2.919, 2   //DOOR 3L
+exit.5 = 0.4,    0.892,  10.328,   2.919, 2   //DOOR 3R
+exit.6 = 0.4,  -45.239, -10.328,   2.919, 2   //DOOR 4L
+exit.7 = 0.4,  -45.239,  10.328,   2.919, 2   //DOOR 4R
+exit.8 = 0.4,  -88.494,  -8.976,   2.919, 2   //DOOR 5L
+exit.9 = 0.4,  -88.494,   8.976,   2.919, 2   //DOOR 5R
+exit.10 = 0.4,  68.622,   5.246,  -4.064, 1   //FWD CARGO DOOR
+exit.11 = 0.4, -62.611,   5.246,  -4.064, 1   //AFT CARGO DOOR
+exit.12 = 0.4, -77.893,   5.721,  -4.064, 1   //BULK CARGO DOOR
+exit.13 = 0.4,  45.377,  10.328,   3.402, 1   //MAIN CARGO DOOR
+exit.14 = 0.4,-101.902,   0.000,   0.092, 1   //AVIONICS DOOR
+exit.15 = 0.4, -83.937,   0.000,  -4.064, 1   //EE DOOR
+exit.16 = 0.4, -99.799,  -3.674,   7.650, 0   //WINDOW CA (A:EXIT OPEN:16, Percent)
+exit.17 = 0.4, -99.799,   3.674,   7.650, 0   //WINDOW FO (A:EXIT OPEN:17, Percent)
+
+[REFERENCE SPEEDS]
+flaps_up_stall_speed = 142.0
+full_flaps_stall_speed = 113.0
+cruise_speed = 482.0 ; 0.84@FL350+
+max_mach = 0.98 ; Increased deliberately
+max_indicated_speed = 380 ; Increased deliberately
+climb_speed	= 320
+cruise_alt = 37000
+max_flaps_extended = 275; Increased
+normal_operating_speed = 320
+airspeed_indicator_max = 562.5
+spawn_cruise_altitude = 31000
+spawn_descent_altitude = 3000
+best_angle_climb_speed = 245
+takeoff_speed = 150
+approach_speed = 145
+best_glide = 245
+max_gear_extended = 275
+cruise_mach	= 0.835
+crossover_speed	= 0
+fly_assistant_use_dynamic_speeds=0
+
+[FLIGHT_TUNING]
+modern_fm_only=1
+//
+cruise_lift_scalar = 1.00		// Cl mult vs Mach workaround
+parasite_drag_scalar = 0.99691 
+induced_drag_scalar  = 1.0
+//
+elevator_effectiveness = 1.00
+aileron_effectiveness = 1.00
+rudder_effectiveness = 1.00
+pitch_stability      = 0.75
+roll_stability       = 0.60			// WAS 0.30
+yaw_stability        = 0.50			// WAS 0.40, 0.75
+pitch_gyro_stability = 5.80
+roll_gyro_stability  = 2.60
+yaw_gyro_stability   = 1.25 		// WAS 2.80, 1.00 Taxi or fly right ?
+elevator_trim_effectiveness = 1.50
+aileron_trim_effectiveness  = 1
+rudder_trim_effectiveness   = 1
+stall_coef_at_min_weight = 0.5
+flap_induced_drag_scalar=1
+empty_CG_deviation_limit=10000
+icing_scalar=0.35
+wingflex_scalar = 0.89
+wingflex_offset = -0.23
+wingflex_surface_scalar = 0.05
+predicted_moi_density_scalar_fuselage=1
+predicted_moi_density_scalar_wings=1
+elevator_maxangle_scalar=1
+elevator_chordangle_scalar=-1
+htail_maxangle_scalar=-1
+rudder_maxangle_scalar = 0.8 // WAS 0.6
+rudder_chordangle_scalar=-1
+vtail_maxangle_scalar=-1
+hi_alpha_on_roll=1
+hi_alpha_on_yaw=1
+p_factor_on_yaw=0
+torque_on_roll=0
+engine_wash_on_roll=0
+rudder_engine_wash_on_roll=1
+gyro_precession_on_yaw=1
+gyro_precession_on_pitch=1
+ground_crosswind_effect_zero_speed=18.43905
+ground_crosswind_effect_max_speed=303.806
+ground_high_speed_steeringwheel_static_friction_scalar=3.82115
+ground_high_speed_otherwheel_static_friction_scalar=3.42203
+
+[AERODYNAMICS]
+//
+elevator_lift_coef = 0.91			// WAS 1.40, 1.26, 1.06, 0.95
+rudder_lift_coef = 3.705			// WAS 1.725
+aileron_up_drag_coef = 0.3325			// WAS 0.50,	0.40,	0.35
+aileron_down_drag_coef = 0.665			// WAS 1.00,	0.80,	0.70
+fuselage_lateral_cx = 0.36
+compute_aero_center = 0
+aero_center_lift = -11.0
+presspt_fwd_Alpha0_pMAC=0
+presspt_fwd_AlphaStall_pMAC=0
+presspt_fwd_AlphaHiStall_pMAC=-0.25
+// LIFT COEF
+lift_coef_pitch_rate = -10.449219
+lift_coef_daoa = 2.195801
+lift_coef_delta_elevator = -0.358398
+lift_coef_horizontal_incidence = 1.891602
+lift_coef_flaps = 1.74372
+lift_coef_spoilers = -0.1
+lift_coef_at_drag_zero = 0.14 
+lift_coef_at_drag_zero_flaps = 0.0 
+// DRAG COEF
+drag_coef_zero_lift = 0.01318
+drag_coef_flaps = 0.05859 // WAS 0.11718
+drag_coef_gear = 0.03125
+drag_coef_spoilers = 0.05908 
+// SIDE FORCE [INOP]
+side_force_slip_angle = -1.17334 ; (yaw angle) The change in side force per change in side slip angle
+side_force_roll_rate = 0.017578 ; (roll velocity)  The change in side force per change in roll rate
+side_force_yaw_rate = 0.0 ; (yaw velocity) The change in side force per change in yaw rate
+side_force_delta_rudder = 0.137695 ; The change in side force per change in rudder deflection
+// PITCH MOMENT [MOST INOP w/ MFM]
+pitch_moment_horizontal_incidence = 4.421875 ; The change in pitch moment per change in horizontal incidence angle
+pitch_moment_delta_elevator = -1.430664 ; The change in pitch moment per change in elevator deflection
+pitch_moment_delta_trim = -0.001807 ; The change in pitch moment per change in trim
+pitch_moment_pitch_damping = -163.860352; The change in pitch moment per change in pitch rate(PRIMARY PITCH STABILITY FACTOR). deg/s
+pitch_moment_aoa_0 = 0.004883 ; Pitch moment at zero angle - of - attack
+pitch_moment_daoa = 11.329102 ; The change in pitch moment per change in angle of attack
+pitch_moment_flaps = -0.000035 ; The pitch moment due to flaps
+pitch_moment_gear = -0.000001 ; The pitch moment due to gear
+pitch_moment_spoilers = 0.000002 ; The pitch moment due to spoilers
+pitch_moment_delta_elevator_propwash = 0.0 ; 
+pitch_moment_pitch_propwash = 0.0 ; 
+// ROLL MOMENT
+roll_moment_slip_angle = 0.01123 ; The change in roll moment per sideslip angle(DIHEDRAL EFFECT)
+roll_moment_roll_damping = -2.127441 ; 
+roll_moment_yaw_rate = -0.006836 ; 
+roll_moment_spoilers = 0.000027 ; The change in roll moment due to spoilers
+roll_moment_delta_aileron = -0.476563 ; (control)The change in roll moment per change in aileron deflection
+roll_moment_delta_rudder = -0.043945 ; (control)The change in roll moment per change rudder deflection
+roll_moment_delta_aileron_trim_scalar = -0.224870 ; Change in roll moment due to aileron trim
+// YAW MOMENT
+yaw_moment_slip_angle = 0.200195 ; The change in yaw moment per change sideslip angle(WEATHER VANING EFFECT)
+yaw_moment_roll = 0.065918 ; (adverse yaw) The change in yaw moment per change in roll rate deg/s
+yaw_moment_yaw_damping = -1.538086 ; (damping)The change in yaw moment per change in yaw rate(PRIMARY YAW STABILITY FACTOR deg/s)
+yaw_moment_yaw_propwash = 0.0 ; (damping)
+yaw_moment_delta_aileron = -0.009766 ; (adverse yaw)  The change in yaw moment per change aileron deflection
+yaw_moment_delta_rudder = 0.164551 ; (control) The change in yaw moment per change in rudder deflection PRIMARY YAW POWER FACTOR
+yaw_moment_delta_rudder_propwash = 0.0 ; (control)
+yaw_moment_delta_rudder_trim_scalar = 0.102539
+// TABLES LIFT
+lift_coef_aoa_table =-3.141590:-0.050000,-2.739480:0.359900,-2.346780:0.500000,-1.954080:0.359900,-1.561380:-0.070000,-0.976070:-0.350000,-0.519670:-0.380000,-0.326070:-0.380952,-0.139070:-0.256190,-0.080013:-0.169524,-0.032013:0.000000,-0.001309:0.190476,0.029758:0.380952,0.044942:0.476190,0.061000:0.571429,0.092939:0.761905,0.100269:0.809524,0.115977:0.952381,0.154899:1.200000,0.204257:1.489524,0.230257:1.567286,0.263257:1.612191,0.298257:1.627524,0.329257:1.613286,0.360257:1.577143,0.380257:1.485143,0.403257:1.342762,0.413294:1.083191,0.445294:0.663810,0.482275:0.427619,0.551182:0.266667,0.776000:0.120000,1.580220:-0.070000,2.365620:-0.200000,3.141593:-0.050000
+lift_coef_ground_effect_mach_table = 0.054000:1.100000,0.100000:1.089000,0.200000:1.069100,0.300000:1.060000,0.400000:1.050000,0.500000:1.041000,0.600000:1.032900,0.700000:1.026100,0.800000:1.020300,0.900000:1.014000,1.000000:1.010000 ; 
+// lift_coef_ground_effect_mach_table = 0.054000:1.250000,0.100000:1.160000,0.200000:1.089100,0.300000:1.066000,0.400000:1.052000,0.500000:1.041000,0.600000:1.032900,0.700000:1.026100,0.800000:1.020300,0.900000:1.014000,1.000000:1.010000 ; 
+lift_coef_mach_table = 0.00:0.805,0.20:0.840,0.40:0.890,0.60:0.910,0.80:1.000,1.00:1.000,1.20:0.540,1.40:0.348315,1.60:0.236918,1.80:0.189165,2.00:0.149599,2.20:0.125843,2.40:0.118860,2.60:0.110193,2.80:0.102247
+//
+lift_coef_daoa_mach_table=0.000000:0.000000, 0.200000:0.000000, 0.400000:0.200293, 0.600000:0.500244, 0.800000:1.100635, 1.000000:1.701026, 1.200000:1.100635, 1.400000:0.500244, 1.600000:0.200293, 1.800000:0.200293, 2.000000:0.200293, 2.200000:0.200293, 2.400000:0.200293, 2.600000:0.200293, 2.800000:0.200293, 3.000000:0.200293, 3.200000:0.200293
+lift_coef_pitch_rate_mach_table=0.000000:0.000000, 0.200000:0.000000, 0.400000:-0.200293, 0.600000:-0.500244, 0.800000:-1.200782, 1.000000:-1.200782, 1.200000:-0.500244, 1.400000:-0.200293, 1.600000:0.000000, 1.800000:0.000000, 2.000000:0.000000, 2.200000:0.000000, 2.400000:0.000000, 2.600000:0.000000, 2.800000:0.000000, 3.000000:0.000000, 3.200000:0.000000
+lift_coef_horizontal_incidence_mach_table=0.000000:0.000000, 0.200000:0.003908, 0.400000:0.009770, 0.600000:0.040059, 0.800000:0.160234, 1.000000:0.082071, 1.200000:0.048852, 1.400000:0.048852, 1.600000:0.047875, 1.800000:0.048852, 2.000000:0.047875, 2.200000:0.048852, 2.400000:0.048852, 2.600000:0.048852, 2.800000:0.048852, 3.000000:0.047875, 3.200000:0.048852
+lift_coef_delta_elevator_mach_table=0.000000:0.000000, 0.200000:0.000000, 0.400000:-0.010259, 0.600000:-0.040059, 0.800000:-0.120176, 1.000000:-0.120176, 1.200000:-0.100147, 1.400000:-0.080117, 1.600000:-0.060088, 1.800000:-0.040059, 2.000000:-0.020029, 2.200000:-0.020029, 2.400000:-0.020029, 2.600000:-0.020029, 2.800000:-0.020029, 3.000000:-0.020029, 3.200000:-0.020029
+// DRAG vs MACH
+drag_coef_zero_lift_mach_tab=0.00:0.000000000,0.20:0.001953125,0.40:0.003906250,0.60:0.006347656,0.80:0.010742188,1.00:0.023437500,1.20:0.062500000,1.40:0.047363281,1.60:0.041015625, 1.80:0.036621094, 2.00:0.036621094, 2.20:0.036621094, 2.40:0.036621094, 2.60:0.036621094, 2.800000:0.036621094,3.000000:0.036621094, 3.200000:0.036621094
+// SIDE FORCE TABLES
+side_force_slip_angle_mach_table=0.000000:0.000000, 0.200000:0.000000, 0.400000:0.000000, 0.600000:0.000000, 0.800000:0.000000, 1.000000:0.000000, 1.200000:0.000000, 1.400000:0.000000, 1.600000:0.000000, 1.800000:0.000000, 2.000000:0.000000, 2.200000:0.000000, 2.400000:0.000000, 2.600000:0.000000, 2.800000:0.000000, 3.000000:0.000000, 3.200000:0.000000
+side_force_delta_rudder_mach_table=0.000000:0.000000, 0.200000:0.000000, 0.400000:0.000000, 0.600000:0.000000, 0.800000:-0.004885, 1.000000:-0.004885, 1.200000:-0.004885, 1.400000:-0.004885, 1.600000:-0.004885, 1.800000:-0.004885, 2.000000:-0.004885, 2.200000:-0.004885, 2.400000:-0.004885, 2.600000:-0.004885, 2.800000:-0.004885, 3.000000:-0.004885, 3.200000:-0.004885
+side_force_yaw_rate_mach_table=0.000000:0.000000, 0.200000:0.000000, 0.400000:0.000000, 0.600000:0.000000, 0.800000:0.000000, 1.000000:0.000000, 1.200000:0.000000, 1.400000:0.000000, 1.600000:0.000000, 1.800000:0.000000, 2.000000:0.000000, 2.200000:0.000000, 2.400000:0.000000, 2.600000:0.000000, 2.800000:0.000000, 3.000000:0.000000, 3.200000:0.000000
+side_force_roll_rate_mach_table=0.000000:0.000000, 0.200000:0.000000, 0.400000:0.000000, 0.600000:0.000000, 0.800000:0.000000, 1.000000:0.000000, 1.200000:0.000000, 1.400000:0.000000, 1.600000:0.000000, 1.800000:0.000000, 2.000000:0.000000, 2.200000:0.000000, 2.400000:0.000000, 2.600000:0.000000, 2.800000:0.000000, 3.000000:0.000000, 3.200000:0.000000
+// PITCH/ROLL MOMENT [INOP]
+pitch_moment_aoa_table = -3.141593:-1.724609,-2.748893:-3.449219,-2.356194:-2.922852,-1.963495:-2.396484,-1.570796:-1.840117,-1.178097:-1.243750,-0.785398:-0.687383,-0.392699:-0.200000,-0.350000:-0.250000,-0.300000:-0.220000,-0.250000:-0.190000,-0.200000:-0.160000,-0.150000:-0.135000,-0.100000:-0.100000,-0.050000:-0.065000,0.000000:-0.030000,0.050000:-0.015000,0.100000:0.035000,0.150000:0.095000,0.200000:0.145000,0.250000:0.240000,0.300000:0.400000,0.350000:0.550000,0.392699:0.700000,0.785398:1.017383,1.178097:1.373750,1.570796:1.770117,1.963495:2.196484,2.356194:2.822852,2.748893:3.449219,3.141593:1.724609 ; 
+pitch_moment_delta_elevator_aoa_table = -25.000000:0.100000,-12.000000:1.000000,12.000000:1.000000,16.000000:0.560600,25.000000:0.100000 ; AoA(alpha) is given in DEGREES
+pitch_moment_horizontal_incidence_aoa_table = -19.550564:0.942347, -17.328909:0.954611, 0:1, 16.608137:0.958282, 18.737385:0.947001 ; AoA(alpha) is given in DEGREES
+pitch_moment_daoa_aoa_table = -23.460677:0.917334, -17.77324:0.952272, 0:1, 17.033986:0.956131, 22.484862:0.923981 ; AoA(alpha) is given in DEGREES
+pitch_moment_pitch_alpha_table = -17.77324:0.952272, 0:1, 17.033986:0.956131, 17.459836:0.3, 22.484862:0.1 ; AoA(alpha) is given in DEGREES
+pitch_moment_delta_elevator_mach_table=0.000000:0.000000, 0.200000:0.067904, 0.400000:0.135809, 0.600000:0.203713, 0.800000:0.303859, 1.000000:0.404006, 1.200000:0.404006, 1.400000:0.404006, 1.600000:0.404006, 1.800000:0.404006, 2.000000:0.404006, 2.200000:0.404006, 2.400000:0.404006, 2.600000:0.404006, 2.800000:0.404006, 3.000000:0.404006, 3.200000:0.404006
+pitch_moment_daoa_mach_table=0.000000:0.000000, 0.200000:0.024915, 0.400000:0.100147, 0.600000:0.275037, 0.800000:0.750366, 1.000000:1.000489, 1.200000:0.000000, 1.400000:-3.001466, 1.600000:-4.001954, 1.800000:-4.502198, 2.000000:-5.002443, 2.200000:-5.002443, 2.400000:-5.002443, 2.600000:-5.002443, 2.800000:-5.002443, 3.000000:-5.002443, 3.200000:-5.002443
+pitch_moment_pitch_rate_mach_table=0.000000:0.000000, 0.200000:0.000000, 0.400000:-0.062531, 0.600000:-0.125061, 0.800000:-0.187592, 1.000000:-0.250122, 1.200000:-0.187592, 1.400000:-0.125061, 1.600000:-0.062531, 1.800000:0.000000, 2.000000:0.125061, 2.200000:0.250122, 2.400000:0.250122, 2.600000:0.250122, 2.800000:0.250122, 3.000000:0.250122, 3.200000:0.250122
+pitch_moment_horizontal_incidence_mach_table=0.000000:0.000000, 0.200000:0.049829, 0.400000:0.100147, 0.600000:0.200293, 0.800000:0.500244, 1.000000:0.350269, 1.200000:0.350269, 1.400000:0.350269, 1.600000:0.350269, 1.800000:0.350269, 2.000000:0.350269, 2.200000:0.350269, 2.400000:0.350269, 2.600000:0.350269, 2.800000:0.350269, 3.000000:0.350269, 3.200000:0.350269
+pitch_moment_aoa_0_mach_table=0.000000:0.000000, 0.200000:0.000489, 0.400000:0.000977, 0.600000:0.001954, 0.800000:0.003908, 1.000000:0.024426, 1.200000:0.012213, 1.400000:0.009770, 1.600000:0.009770, 1.800000:0.009770, 2.000000:0.009770, 2.200000:0.009770, 2.400000:0.009770, 2.600000:0.009770, 2.800000:0.009770, 3.000000:0.009770, 3.200000:0.009770
+roll_moment_aoa_table = -22.21655:0, -17.77324:0, 0:0, 11.92379:0, 16.912774:0, 18.124895:0, 20.390507:0 ; Cl (roll moment coef) versus AoA
+roll_moment_slip_angle_aoa_table = -180.000000:1.000000,-90.000000:0.200000,-18.000000:0.560000,-10.000000:0.940000,0.000000:1.000000,10.000000:0.950000,18.000000:0.560000,90.000000:0.200000,180.000000:1.000000 ; 
+roll_moment_roll_rate_aoa_table = -180.000000:1.000000,-90.000000:0.300000,-18.000000:0.400000,-10.000000:0.650000,0.000000:1.000000,10.000000:0.650000,18.000000:0.400000,90.000000:0.300000,180.000000:1.000000 ; 
+roll_moment_delta_aileron_aoa_table = -15.000000:1.100000,0.000000:1.000000,13.000000:1.100000,16.000000:1.000000,25.000000:1.000000 ; 
+roll_moment_slip_angle_mach_table=0.000000:0.000000, 0.200000:0.000000, 0.400000:0.000000, 0.600000:0.000000, 0.800000:0.000000, 1.000000:0.000000, 1.200000:0.000000, 1.400000:0.000000, 1.600000:0.000000, 1.800000:0.000000, 2.000000:0.000000, 2.200000:0.000000, 2.400000:0.000000, 2.600000:0.000000, 2.800000:0.000000, 3.000000:0.000000, 3.200000:0.000000
+roll_moment_delta_rudder_mach_table=0.000000:0.000000, 0.200000:0.000000, 0.400000:0.000000, 0.600000:0.000000, 0.800000:0.000000, 1.000000:0.000000, 1.200000:0.000000, 1.400000:0.000000, 1.600000:0.000000, 1.800000:0.000000, 2.000000:0.000000, 2.200000:0.000000, 2.400000:0.000000, 2.600000:0.000000, 2.800000:0.000000, 3.000000:0.000000, 3.200000:0.000000
+roll_moment_delta_aileron_mach_table=0.000000:0.000000, 0.200000:0.000000, 0.400000:-0.004885, 0.600000:-0.010259, 0.800000:-0.020029, 1.000000:-0.024915, 1.200000:-0.024915, 1.400000:-0.024915, 1.600000:-0.024915, 1.800000:-0.024915, 2.000000:-0.024915, 2.200000:-0.024915, 2.400000:-0.024915, 2.600000:-0.024915, 2.800000:-0.024915, 3.000000:-0.024915, 3.200000:-0.024915
+roll_moment_yaw_rate_mach_table=0.000000:0.000000, 0.200000:0.000000, 0.400000:0.000000, 0.600000:0.000000, 0.800000:0.000000, 1.000000:0.000000, 1.200000:0.000000, 1.400000:0.000000, 1.600000:0.000000, 1.800000:0.000000, 2.000000:0.000000, 2.200000:0.000000, 2.400000:0.000000, 2.600000:0.000000, 2.800000:0.000000, 3.000000:0.000000, 3.200000:0.000000
+roll_moment_roll_rate_mach_table=0.000000:0.000000, 0.200000:-0.004885, 0.400000:-0.020029, 0.600000:-0.049829, 0.800000:-0.100147, 1.000000:-0.109917, 1.200000:-0.109917, 1.400000:-0.109917, 1.600000:-0.109917, 1.800000:-0.109917, 2.000000:-0.109917, 2.200000:-0.109917, 2.400000:-0.109917, 2.600000:-0.109917, 2.800000:-0.109917, 3.000000:-0.109917, 3.200000:-0.109917
+yaw_moment_aoa_table = -22.21655:0, -17.77324:0, 0:0, 11.92379:0, 16.912774:0, 18.124895:0, 20.390507:0 ; Cn (yaw moment coef) versus AoA
+yaw_moment_slip_angle_aoa_table = -180.000000:1.000000,-90.000000:0.000000,-18.000000:0.200000,-10.000000:0.300000,0.000000:1.000000,10.000000:0.300000,18.000000:0.200000,90.000000:0.000000,180.000000:1.000000 ; 
+yaw_moment_yaw_rate_aoa_table = -180.000000:1.000000,-90.000000:0.100000,-18.000000:0.700000,-10.000000:0.930000,0.000000:1.000000,10.000000:0.960000,18.000000:0.700000,90.000000:0.100000,180.000000:1.000000 ; 
+yaw_moment_delta_rudder_aoa_table = -90:0.3, -17.328909:0.954611, 0:1, 16.608137:0.958282, 90:0.3 ; 
+yaw_moment_slip_angle_mach_table=0.000000:0.000000, 0.200000:0.000000, 0.400000:0.000000, 0.600000:0.000000, 0.800000:0.000000, 1.000000:0.000000, 1.200000:0.000000, 1.400000:0.000000, 1.600000:0.000000, 1.800000:0.000000, 2.000000:0.000000, 2.200000:0.000000, 2.400000:0.000000, 2.600000:0.000000, 2.800000:0.000000, 3.000000:0.000000, 3.200000:0.000000
+yaw_moment_delta_rudder_mach_table=0.000000:0.000000, 0.200000:0.000000, 0.400000:0.000000, 0.600000:0.000000, 0.800000:0.000000, 1.000000:0.000000, 1.200000:0.000000, 1.400000:0.000000, 1.600000:0.000000, 1.800000:0.000000, 2.000000:0.000000, 2.200000:0.000000, 2.400000:0.000000, 2.600000:0.000000, 2.800000:0.000000, 3.000000:0.000000, 3.200000:0.000000
+yaw_moment_delta_aileron_mach_table=0.000000:0.000000, 0.200000:0.000000, 0.400000:-0.000977, 0.600000:-0.001954, 0.800000:-0.002931, 1.000000:-0.002931, 1.200000:-0.002931, 1.400000:-0.002931, 1.600000:-0.002931, 1.800000:-0.002931, 2.000000:-0.002931, 2.200000:-0.002931, 2.400000:-0.002931, 2.600000:-0.002931, 2.800000:-0.002931, 3.000000:-0.002931, 3.200000:-0.002931
+yaw_moment_yaw_rate_mach_table=0.000000:0.000000, 0.200000:0.000000, 0.400000:0.000000, 0.600000:0.000000, 0.800000:0.000000, 1.000000:0.000000, 1.200000:0.000000, 1.400000:0.000000, 1.600000:0.000000, 1.800000:0.000000, 2.000000:0.000000, 2.200000:0.000000, 2.400000:0.000000, 2.600000:0.000000, 2.800000:0.000000, 3.000000:0.000000, 3.200000:0.000000
+yaw_moment_roll_rate_mach_table=0.000000:0.000000, 0.200000:0.000000, 0.400000:0.000000, 0.600000:0.000000, 0.800000:0.000000, 1.000000:0.000000, 1.200000:0.000000, 1.400000:0.000000, 1.600000:0.000000, 1.800000:0.000000, 2.000000:0.000000, 2.200000:0.000000, 2.400000:0.000000, 2.600000:0.000000, 2.800000:0.000000, 3.000000:0.000000, 3.200000:0.000000
+// OTHER
+elevator_scaling_table = -0.454000:1.000000,-0.349000:0.900000,-0.175000:0.800000,0.000000:0.600000,0.175000:0.800000,0.349000:1.000000,0.454000:1.000000 ; scales control based on its deflection
+aileron_scaling_table = -0.785000:0.850000,-0.524000:0.850000,-0.175000:0.950000,0.000000:1.000000,0.175000:0.950000,0.524000:0.850000,0.785000:0.850000 ; scales control based on its deflection
+rudder_scaling_table = -0.785000:0.500000,-0.524000:0.600000,-0.175000:0.900000,0.000000:1.000000,0.175000:0.900000,0.524000:0.600000,0.785000:0.500000 ; scales control based on its deflection
+aileron_load_factor_effectiveness_table = 0:1, 2:1, 4:1, 8:1, 10:1 ; scaling of roll_moment_delta_aileron versus gravity forces, G effects on aileron effectiveness, acts on roll_moment_delta_aileron
+
+[FLAPS.0]
+type=1
+system_type=1
+system_type_index=0
+span-outboard=0.69
+extending-time=54.0
+altitude-limit=-1
+damaging-speed=0
+blowout-speed=0
+maneuvering_flaps=0
+lift_scalar=1
+drag_scalar=1
+pitch_scalar=1	// INOP
+max_on_ground_position=6
+delay_between_flap_index=0
+//
+flaps-position.0 = 0.000000, -1, 1.00000, 1.00000, 1, 0,  0.00, 0			//  0										 1.00000								
+flaps-position.1 = 6.111111, -1, 0.20000, 0.00001, 1, 0, -0.35, 0			//  1  11 sec 								 0.01000
+flaps-position.2 = 13.33333, -1, 0.35000, 0.87500, 1, 0, -0.90, 0			//  5  24 sec 								 0.20000
+flaps-position.3 = 16.66667, -1, 0.85000, 1.15000, 1, 0, -1.40, 0			//  15 30 sec 								 0.20000
+flaps-position.4 = 19.44444, -1, 0.20000, 1.40000, 1, 0, -1.70, 0			//  20 35 sec 								 0.15000
+flaps-position.5 = 26.11111, -1, 1.42500, 1.25000, 1, 0, -1.85, 0			//  25 47 sec 								 0.30000
+flaps-position.6 = 30.00000, -1, 1.47500, 1.44000, 1, 0, -2.00, 0			//  30 54 sec fac = 1 + scalar*[0]/[1]		 0.30000
+

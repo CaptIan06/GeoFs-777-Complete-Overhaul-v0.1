@@ -1,0 +1,96 @@
+[fltsim.0]
+title="GEOFS 777-300ER OVERHAUL"
+atc_airline="GEOFS"
+atc_flight_number="773"
+atc_heavy=0
+atc_id="N773ER"
+atc_id_color="0x00000000"
+atc_id_enable=1
+atc_id_font=""
+atc_parking_codes=""
+atc_parking_types="GATE,RAMP"
+description = "TT:AIRCRAFT.DESCRIPTION" ; Variation description
+icao_airline=""
+isAirTraffic=0
+isUserSelectable=1
+KB_Checklists=""
+KB_Reference=""
+model="300ER"
+panel=""
+sound=""
+texture="PMDG"
+ui_autonomy = 16 ; max duration the aircraft can fly between take-off and landing in (Hrs)
+ui_certified_ceiling=43100
+ui_createdby="GEOFS"
+ui_fuel_burn_rate = 18000 ; average fuel consumption per hour (lbs/hr)
+ui_manufacturer="Boeing"
+ui_max_range = 7370 ; max distance the aircraft can fly between take-off and landing in (NM)
+ui_thumbnailfile=""
+ui_type="777-300ER"
+ui_typerole="Commercial Airliner"
+ui_variation="GEOFS Overhaul (N773ER | 2023)"
+wip_indicator=2
+isFlyable=1
+Effects=""
+
+[General]
+atc_type = "TT:ATCCOM.ATC_NAME BOEING.0.text"
+atc_model = "TT:ATCCOM.AC_MODEL B77W.0.text"
+Category = "airplane"
+icao_type_designator="B77W"
+icao_manufacturer="Boeing"
+icao_model="777-300ER"
+icao_engine_type="Jet"
+icao_WTC="H"
+icao_engine_count=2
+performance="Cruise Speed:\nMach 0.792 (450 kts\s 834 km\/h) \n\nEngines:\nCFM56-7B26 \n\nMaximum Range: \n2,800 nm (3,222 mi\s 5,186 km) \n\nService Ceiling:     \n41, 000 ft (12,496 m) \n\nFuel Capacity:\n6,875 U.S. gal (26,022 L) \n\nEmpty Weight-Standard:\n91,300 lb (41,412 kg) \n\nMaximum Gross Weight:\n174,900 lb (79,333 kg) \n\nLength:\n138 ft 2 in (42.11 m) \n\nWingspan: \n112 ft, 7 in (34.32 m) \n\nHeight: \n41 ft 2 in (12.55 m) \n\n"
+
+[keyboard_response]      
+//Breakpoint speeds (knots) on the keyboard increments of control surfaces.
+//Speed at which the incremenet is reduced to  1/2 and 1/8 respectively.
+elevator = 150, 250   
+aileron  = 150, 250
+rudder   = 150, 250
+
+[EFFECTS]
+wake = fx_wake, 0 
+water = fx_spray, 0 
+startup=fx_engstrt, 1
+dirt = FX_ASOBO_TOUCHDIRT_BIG, 1 
+concrete = FX_ASOBO_TOUCHCONCRETE_BIG, 1 
+touchdown = FX_ASOBO_TouchDown_Big, 1
+contrail = FX_CONTRAIL_BIG, 1
+effect.0 =fx_77W_engine1ex#(A:GENERAL ENG COMBUSTION:1, boolean)#FX_HEAT_BIG
+effect.1 =fx_77W_engine2ex#(A:GENERAL ENG COMBUSTION:2, boolean)#FX_HEAT_BIG
+effect.2 =fx_77W_apu#(L:7X7XAPUInlet, percent) 99 >#FX_HEAT_BIG
+
+[PILOT]
+pilot = "Pilot_Male_Uniform"
+copilot = "Pilot_Male_Uniform"
+instructor = "Pilot_Male_Uniform"
+pilot_default_animation = "Idle1_PosePropeller"
+copilot_default_animation = "Idle2_PosePropeller"
+pilot_attach_node = "PILOT_0"
+copilot_attach_node = "PILOT_1"
+instructor_attach_node = "PILOT_2"
+
+[IKCHAINS]
+right_hand_target=""
+left_hand_target=""
+left_foot_target=""
+right_foot_target=""
+
+[SERVICES]
+FUELTRUCK = 0
+BAGGAGE_LOADER = 0
+CATERING_TRUCK = 0
+BOARDING_RAMP = 0
+GROUND_POWER_UNIT = 0
+PUSHBACK = 1
+SMALL_PUSHBACK = 0
+MARSHALLER = 1
+JETWAY = 1
+
+[VERSION]
+major=1
+minor=0
