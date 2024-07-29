@@ -19,13 +19,6 @@ accumulated_time_hobbs_min_knots = 0
 min_fuel_press_for_combustion_psf = 0.00
 requires_priming = 0
 
-[DISABLED_CONTROLS]
-disablefuelvalvecontrols = 0
-disablemixturecontrols = 1
-disableparkingbrakecontrols = 0
-disablepropellercontrols = 1
-disableautopilotcontrols = 1
-
 [TURBINEENGINEDATA]
 fuel_flow_gain = 0.0031
 low_idle_n1 = 20.5
